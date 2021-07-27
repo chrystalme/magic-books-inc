@@ -33,6 +33,11 @@ Install dependencies
 ```
 $npm install
 ```
+Run application
+```
+$npm run start
+```
+
 #### Live Link
 
 [Magic Books Inc](https://magic-books-microverse.herokuapp.com/)
