@@ -37,6 +37,10 @@ Run application
 ```
 $npm run start
 ```
+Run Tests
+```
+$npm run test
+```
 
 #### Live Link
 
@@ -54,7 +58,7 @@ $npm run start
 
 - GitHub: [@chrystalme](https://github.com/chrystalme)
 - Twitter: [@afam_ifeanyi](https://twitter.com/afam_ifeanyi)
-- LinkedIn: [Malieze Afam Ifeanyi(chrys)](https://linkedin.com/afam-chrys)
+- LinkedIn: [Malieze Afam Ifeanyi(chrys)](https://linkedin.com/in/afam-chrys)
 
 
 ## 🤝 Contributing
