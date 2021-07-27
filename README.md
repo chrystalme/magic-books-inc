@@ -29,6 +29,11 @@ $ git clone https://github.com/chrystalme/magic-books-inc.git
 $ cd magic-books-inc
 ```
 
+Install dependencies
+```
+$npm install
+```
+
 ## Authors
 
 👤 **Sarvar Khalimov**
