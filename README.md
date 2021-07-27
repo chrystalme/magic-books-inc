@@ -1,6 +1,6 @@
 # Magic-books-inc
 
-In this project, we built a basic web based Content Management System, CMS application using React-Redux.
+In this project, we built a basic web based Content Management System, CMS, application using React-Redux.
 
 ## Built With
 
