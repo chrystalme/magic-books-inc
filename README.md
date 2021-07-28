@@ -1,6 +1,6 @@
 # Magic-books-inc
 
-In this project, we built a basic web based Content Management System, CMS application using React-Redux.
+In this project, we built a basic web based Content Management System, CMS, application using React-Redux.
 
 ## Built With
 
@@ -29,6 +29,23 @@ $ git clone https://github.com/chrystalme/magic-books-inc.git
 $ cd magic-books-inc
 ```
 
+Install dependencies
+```
+$npm install
+```
+Run application
+```
+$npm run start
+```
+Run Tests
+```
+$npm run test
+```
+
+#### Live Link
+
+[Magic Books Inc](https://magic-books-microverse.herokuapp.com/)
+
 ## Authors
 
 👤 **Sarvar Khalimov**
@@ -41,7 +58,7 @@ $ cd magic-books-inc
 
 - GitHub: [@chrystalme](https://github.com/chrystalme)
 - Twitter: [@afam_ifeanyi](https://twitter.com/afam_ifeanyi)
-- LinkedIn: [Malieze Afam Ifeanyi(chrys)](https://linkedin.com/afam-chrys)
+- LinkedIn: [Malieze Afam Ifeanyi(chrys)](https://linkedin.com/in/afam-chrys)
 
 
 ## 🤝 Contributing
