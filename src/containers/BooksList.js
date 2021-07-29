@@ -21,8 +21,8 @@ const BooksList = ({ books }) => (
 );
 
 const mapStateToProps = (state) => ({ books: state.Books });
-
+const ConnectedComponent = connect(mapStateToProps)(BooksList);
 BooksList.propTypes = {
   books: PropTypes.instanceOf(Array).isRequired,
 };
-export default connect(mapStateToProps)(BooksList);
+export default ConnectedComponent;
