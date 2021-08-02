@@ -17,7 +17,7 @@ const BooksForm = () => (
     <select name="category" id="category">
       <option value="">Select a category</option>
       {CATEGORY.map((category) => (
-        <option key={Math.floor(Math.random() * CATEGORY.length)} value={category}>
+        <option key={Math.floor(Math.random() * CATEGORY.length * 10)} value={category}>
           {category}
         </option>
       ))}

@@ -3,22 +3,27 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
 
-const BooksList = ({ books }) => (
-  <table>
-    <thead>
-      <tr>
-        <td>Book ID</td>
-        <td>Title</td>
-        <td>Category</td>
-      </tr>
-    </thead>
-    <tbody>
-      {books.map((book) => (
-        <Book key={book.ISBN} book={book} />
-      ))}
-    </tbody>
-  </table>
-);
+const BooksList = ({ books, removeBook }) => {
+  const handleRemoveBook = (ISBN) => {
+    removeBook(ISBN);
+  };
+  return (
+    <table>
+      <thead>
+        <tr>
+          <td>Book ID</td>
+          <td>Title</td>
+          <td>Category</td>
+        </tr>
+      </thead>
+      <tbody>
+        {books.map((book) => (
+          <Book key={book.ISBN} book={book} />
+        ))}
+      </tbody>
+    </table>
+  );
+};
 
 const mapStateToProps = (state) => ({ books: state.Books });
 const ConnectedComponent = connect(mapStateToProps)(BooksList);
