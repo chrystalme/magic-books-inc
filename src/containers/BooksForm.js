@@ -24,6 +24,17 @@ const BooksForm = ({ addBook }) => {
       setCategorySelect(e.target.value);
     }
   };
+
+  const handleSubmit = () => {
+    addBook({
+      ISBN: Math.floor(Math.random() * 100000001),
+      title: titleInput,
+      category: categorySelect,
+    });
+    setTitleInput('');
+    setCategorySelect('');
+  };
+
   return (
     <form>
       <h2>Add book form</h2>
@@ -36,14 +47,19 @@ const BooksForm = ({ addBook }) => {
           </option>
         ))}
       </select>
-      <input type="button" value="submit" />
+      <input onClick={handleSubmit} type="button" value="submit" />
     </form>
   );
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  adbook: (book) => dispatch(addBook(book)),
+  addBook: (book) => dispatch(addBook(book)),
 });
 
 const ConnectedComponent = connect(null, mapDispatchToProps)(BooksForm);
+
+BooksForm.propTypes = {
+  addBook: PropTypes.func.isRequired,
+};
+
 export default ConnectedComponent;
