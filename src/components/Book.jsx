@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 
 const Book = ({ book, removeBook }) => (
   <tr>
@@ -18,6 +17,4 @@ Book.propTypes = {
   removeBook: PropTypes.func.isRequired,
 };
 
-const ConnectedComponent = connect()(Book);
-
-export default ConnectedComponent;
+export default Book;

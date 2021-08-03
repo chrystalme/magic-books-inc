@@ -25,7 +25,8 @@ const BooksForm = ({ addBook }) => {
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     addBook({
       ISBN: Math.floor(Math.random() * 100000001),
       title: titleInput,
@@ -36,7 +37,7 @@ const BooksForm = ({ addBook }) => {
   };
 
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <h2>Add book form</h2>
       <input type="text" name="title" placeholder="Enter Book Title" value={titleInput} onChange={handleChange} />
       <select name="category" id="category" value={categorySelect} onChange={handleChange}>
@@ -47,7 +48,7 @@ const BooksForm = ({ addBook }) => {
           </option>
         ))}
       </select>
-      <input onClick={handleSubmit} type="button" value="submit" />
+      <button type="submit">Add Book</button>
     </form>
   );
 };
@@ -56,10 +57,10 @@ const mapDispatchToProps = (dispatch) => ({
   addBook: (book) => dispatch(addBook(book)),
 });
 
-const ConnectedComponent = connect(null, mapDispatchToProps)(BooksForm);
-
 BooksForm.propTypes = {
   addBook: PropTypes.func.isRequired,
 };
+
+const ConnectedComponent = connect(null, mapDispatchToProps)(BooksForm);
 
 export default ConnectedComponent;
