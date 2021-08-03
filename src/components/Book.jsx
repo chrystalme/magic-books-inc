@@ -13,7 +13,11 @@ const Book = ({ book, removeBook }) => (
 );
 
 Book.propTypes = {
-  book: PropTypes.instanceOf(Object).isRequired,
+  book: {
+    ISBN: PropTypes.string,
+    title: PropTypes.string,
+    category: PropTypes.string,
+  }.isRequired,
   removeBook: PropTypes.func.isRequired,
 };
 
