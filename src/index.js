@@ -30,9 +30,7 @@ const initialState = {
   ],
 };
 
-const store = createStore(rootReducer, initialState,
-  // eslint-disable-next-line no-underscore-dangle
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = createStore(rootReducer, initialState);
 
 ReactDOM.render(
   <React.StrictMode>
