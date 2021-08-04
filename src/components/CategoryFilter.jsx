@@ -13,7 +13,6 @@ const CATEGORY = [
 ];
 
 const CategoryFilter = ({ changeFilter }) => (
-  // <select onChange={(e) => changeFilter(e.target.value)}>
   <select onChange={changeFilter}>
     {CATEGORY.map((category) => (
       <option key={category} value={category}>

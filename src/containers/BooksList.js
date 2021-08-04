@@ -6,19 +6,15 @@ import { removeBook, changeFilter } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = ({
-  books, removeBook, changeFilter, filter,
+  books, removeBook, handleFilterChange, filter,
 }) => {
   const handleRemoveBook = (ISBN) => {
     removeBook(ISBN);
   };
 
-  const handleFilterChange = (filter) => {
-    changeFilter(filter);
-  };
-
   return (
     <>
-      <CategoryFilter handleFilter={handleFilterChange} />
+      <CategoryFilter changeFilter={handleFilterChange} />
       <table>
         <thead>
           <tr>
@@ -45,7 +41,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   removeBook: (ISBN) => dispatch(removeBook(ISBN)),
-  changeFilter: (filter) => dispatch(changeFilter(filter)),
+  handleFilterChange: (filter) => dispatch(changeFilter(filter.target.value)),
 });
 
 const ConnectedComponent = connect(mapStateToProps, mapDispatchToProps)(BooksList);
@@ -54,7 +50,7 @@ BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object).isRequired,
   removeBook: PropTypes.func.isRequired,
   filter: PropTypes.string.isRequired,
-  changeFilter: PropTypes.func.isRequired,
+  handleFilterChange: PropTypes.func.isRequired,
 };
 
 export default ConnectedComponent;
