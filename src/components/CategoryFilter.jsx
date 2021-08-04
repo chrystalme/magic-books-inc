@@ -12,18 +12,19 @@ const CATEGORY = [
   'Sci-Fi',
 ];
 
-const CategoryFilter = ({ handleFilter }) => {
-  <select onChange={(e) => handleFilter(e.target.value)}>
-    {CATEGORY.map((category) => {
+const CategoryFilter = ({ changeFilter }) => (
+  // <select onChange={(e) => changeFilter(e.target.value)}>
+  <select onChange={changeFilter}>
+    {CATEGORY.map((category) => (
       <option key={category} value={category}>
         {category}
-      </option>;
-    })}
-  </select>;
-};
+      </option>
+    ))}
+  </select>
+);
 
 CategoryFilter.propTypes = {
-  handleFilter: PropTypes.func.isRequired,
+  changeFilter: PropTypes.func.isRequired,
 };
 
 export default CategoryFilter;
