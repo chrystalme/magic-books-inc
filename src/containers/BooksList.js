@@ -47,7 +47,7 @@ const mapDispatchToProps = (dispatch) => ({
 const ConnectedComponent = connect(mapStateToProps, mapDispatchToProps)(BooksList);
 
 BooksList.propTypes = {
-  books: PropTypes.arrayOf(PropTypes.object).isRequired,
+  books: PropTypes.instanceOf(Array).isRequired,
   removeBook: PropTypes.func.isRequired,
   filter: PropTypes.string.isRequired,
   handleFilterChange: PropTypes.func.isRequired,
