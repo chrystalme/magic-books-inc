@@ -13,11 +13,11 @@ const Book = ({ book, removeBook }) => (
 );
 
 Book.propTypes = {
-  book: {
-    ISBN: PropTypes.string,
+  book: PropTypes.shape({
+    ISBN: PropTypes.number,
     title: PropTypes.string,
     category: PropTypes.string,
-  }.isRequired,
+  }).isRequired,
   removeBook: PropTypes.func.isRequired,
 };
 
