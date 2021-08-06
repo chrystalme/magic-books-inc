@@ -13,7 +13,8 @@ const CATEGORY = [
 ];
 
 const CategoryFilter = ({ changeFilter }) => (
-  <select onChange={changeFilter}>
+  <select className="nav-item" onChange={changeFilter}>
+    <option value="All">Category</option>
     {CATEGORY.map((category) => (
       <option key={category} value={category}>
         {category}
