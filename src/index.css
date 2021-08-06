@@ -18,6 +18,7 @@ body {
 .link {
   @apply px-2 cursor-pointer text-blue-600 hover:text-blue-800 text-sm font-light;
 }
+
 .link:first-child {
   @apply pl-0;
 }
@@ -27,12 +28,13 @@ body {
  * All of the styles in this file are configurable!
  */
 
- .CircularProgressbar {
+.CircularProgressbar {
   /*
    * This fixes an issue where the CircularProgressbar svg has
    * 0 width inside a "display: flex" container, and thus not visible.
    */
   width: 100%;
+
   /*
    * This fixes a centering issue with CircularProgressbarWithChildren:
    * https://github.com/kevinsqi/react-circular-progressbar/issues/94
@@ -48,6 +50,7 @@ body {
 
 .CircularProgressbar .CircularProgressbar-trail {
   stroke: #d6d6d6;
+
   /* Used when trail is not full diameter, i.e. when props.circleRatio is set */
   stroke-linecap: round;
 }
