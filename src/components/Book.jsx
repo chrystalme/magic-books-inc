@@ -7,7 +7,7 @@ const Book = ({ book, removeBook }) => {
   const percentage = Math.floor(Math.random() * 100);
   return (
     <>
-      <div className="mt-3 p-3 mx-auto w-4/5 container align-middle bg-white flex md:flex-row sm:flex-col justify-between items-center">
+      <div className="mt-3 border-solid border border-gray-100 p-3 mx-auto w-4/5 container align-middle bg-white flex md:flex-row sm:flex-col justify-between items-center">
         <div className="pl-3">
           <h5 className="text-gray-400 text-sm font-medium">{book.category}</h5>
           <h3 className="font-bold text-xl">{book.title}</h3>

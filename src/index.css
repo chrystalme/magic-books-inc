@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-300 px-12 py-4 mx-auto;
+  @apply bg-gray-100 px-12 py-4 mx-auto;
 }
 
 .btn {
@@ -13,7 +13,7 @@ body {
 }
 
 .nav-item {
-  @apply text-sm font-light text-gray-500 hover:text-gray-700 uppercase;
+  @apply text-xs font-light text-gray-500 hover:text-gray-700 uppercase;
 }
 
 .link {
