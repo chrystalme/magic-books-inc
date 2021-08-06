@@ -14,7 +14,7 @@ const BooksList = ({
 
   return (
     <>
-      <nav className="container md:mx-auto">
+      <nav className="container mx-auto">
         <div className="bg-white flex justify-between align-middle items-center px-10 py-4">
           <div className="content-center">
             <span className="text-2xl text-blue-600">Bookstore CMS</span>
