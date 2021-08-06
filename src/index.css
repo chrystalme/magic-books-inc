@@ -1,14 +1,23 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  @apply bg-gray-300 px-12 py-4 mx-auto;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+.btn {
+  @apply rounded-sm text-xs py-2 bg-blue-600 hover:bg-blue-400 text-gray-200 px-5 uppercase;
+}
+
+.nav-item {
+  @apply text-sm font-light text-gray-500 hover:text-gray-700 uppercase;
+}
+
+.link {
+  @apply px-2 cursor-pointer text-blue-600 hover:text-blue-800 text-sm font-light;
+}
+.link:first-child {
+  @apply pl-0;
 }
