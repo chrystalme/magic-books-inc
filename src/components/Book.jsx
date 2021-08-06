@@ -25,13 +25,13 @@ const Book = ({ book, removeBook }) => {
             <a className="link" href="/">Edit</a>
           </div>
         </div>
-        <div className="flex md:flex-row items-center sm:flex-col gap-4">
-          <div className=" flex flex-row gap-2 pr-4 border-r-2 border-solid border-gray-400">
+        <div className="flex md:flex-row items-center sm:flex-col gap-14">
+          <div className=" flex flex-row gap-2 pr-16 border-r-2 border-solid border-gray-100">
             <div className="w-12">
               <CircularProgressbar value={percentage} />
             </div>
             <div>
-              <span className="font-normal text-3xl" id="perc">
+              <span className="font-normal text-3xl">
                 {percentage}
                 %
               </span>
