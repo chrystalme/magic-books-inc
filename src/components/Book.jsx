@@ -11,18 +11,18 @@ const Book = ({ book, removeBook }) => {
         <div className="pl-3">
           <h5 className="text-gray-400 text-sm font-medium">{book.category}</h5>
           <h3 className="font-bold text-xl">{book.title}</h3>
-          <h5 className="text-blue-500 text-sm font-light">{book.ISBN}</h5>
+          <h5 className="text-blue-500 text-sm font-light c-light-blue">{book.ISBN}</h5>
           <div className="divide-x divide-gray-400">
-            <a className="link" href="/">Comments</a>
+            <a className="link c-light-blue" href="/">Comments</a>
             <a
-              className="link "
+              className="link c-light-blue"
               value="Remove"
               onClick={() => removeBook(book.ISBN)}
               href="/"
             >
               Remove
             </a>
-            <a className="link" href="/">Edit</a>
+            <a className="link c-light-blue" href="/">Edit</a>
           </div>
         </div>
         <div className="flex md:flex-row items-center sm:flex-col gap-14">

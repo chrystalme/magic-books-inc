@@ -24,6 +24,14 @@ body {
   @apply pl-0;
 }
 
+.logo {
+  color: #0290ff;
+}
+
+.c-light-blue {
+  color: #4386bf;
+}
+
 /* stylelint-enable */
 
 /*
