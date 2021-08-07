@@ -29,10 +29,14 @@ body {
 
 .logo {
   color: #0290ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .c-light-blue {
   color: #4386bf;
+  font-family: 'Roboto', sans-serif;
 }
 
 .margin-top {
