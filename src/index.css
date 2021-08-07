@@ -36,7 +36,8 @@ body {
 
 .c-light-blue {
   color: #4386bf;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 0.875rem;
 }
 
 .margin-top {
