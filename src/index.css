@@ -43,6 +43,11 @@ body {
   margin-right: 7rem;
 }
 
+form {
+  margin: 1.5rem auto;
+  padding: 2rem 0 10rem 0;
+}
+
 /*
  * react-circular-progressbar styles
  * All of the styles in this file are configurable!
