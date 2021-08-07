@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Montserrat', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      serif: ['Roboto Slab', 'serif'],
     },
     extend: {},
   },
