@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-100 px-12 py-4 mx-auto;
+  @apply bg-gray-100 px-12 pt-12 mx-auto;
 }
 
 .btn {
