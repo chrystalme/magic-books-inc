@@ -25,6 +25,8 @@ body {
   @apply pl-0;
 }
 
+/* stylelint-enable */
+
 .logo {
   color: #0290ff;
 }
@@ -37,7 +39,9 @@ body {
   margin-top: 1rem;
 }
 
-/* stylelint-enable */
+.margin-right {
+  margin-right: 7rem;
+}
 
 /*
  * react-circular-progressbar styles

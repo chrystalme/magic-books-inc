@@ -38,7 +38,7 @@ const Book = ({ book, removeBook }) => {
               <h5 className="text-gray-300 text-sm font-light">Completed</h5>
             </div>
           </div>
-          <div>
+          <div className="margin-right">
             <h5 className="font-light text-sm text-gray-300">
               Current Chapter
             </h5>
