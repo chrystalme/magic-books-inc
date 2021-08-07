@@ -49,7 +49,7 @@ const BooksForm = ({ addBook }) => {
             </option>
           ))}
         </select>
-        <button className="btn" type="submit">Add Book</button>
+        <button className="px-8 btn font-serif font-bold" type="submit">Add Book</button>
       </div>
     </form>
   );

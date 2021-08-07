@@ -43,7 +43,7 @@ const Book = ({ book, removeBook }) => {
               Current Chapter
             </h5>
             <p className="text-sm">Chapter 17</p>
-            <button className="btn margin-top" type="button">Update Progress</button>
+            <button className="btn px-5 margin-top font-serif font-light" type="button">Update Progress</button>
           </div>
         </div>
       </div>

@@ -9,8 +9,9 @@ body {
 }
 
 .btn {
-  @apply rounded-sm text-xs py-2 bg-blue-600 hover:bg-blue-400 text-gray-200 px-5 uppercase;
+  @apply rounded-sm py-2 bg-blue-600 hover:bg-blue-400 text-gray-200 uppercase;
   background: #0290ff;
+  font-size: 0.813rem;
 }
 
 .nav-item {
@@ -30,8 +31,8 @@ body {
 .logo {
   color: #0290ff;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 1.875rem;
 }
 
 .c-light-blue {
