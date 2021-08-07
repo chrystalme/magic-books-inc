@@ -10,6 +10,7 @@ body {
 
 .btn {
   @apply rounded-sm text-xs py-2 bg-blue-600 hover:bg-blue-400 text-gray-200 px-5 uppercase;
+  background: #0290ff;
 }
 
 .nav-item {
