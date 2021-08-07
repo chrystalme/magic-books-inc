@@ -48,6 +48,14 @@ form {
   padding: 2rem 0 10rem 0;
 }
 
+.c-shadow {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+#root {
+  padding: 3rem 2rem 6rem 2rem;
+}
+
 /*
  * react-circular-progressbar styles
  * All of the styles in this file are configurable!
