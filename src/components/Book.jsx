@@ -12,7 +12,7 @@ const Book = ({ book, removeBook }) => {
           <h5 className="text-gray-400 text-sm font-medium">{book.category}</h5>
           <h3 className="font-bold text-xl">{book.title}</h3>
           <h5 className="text-blue-500 text-sm font-light c-light-blue">{book.ISBN}</h5>
-          <div className="divide-x divide-gray-400">
+          <div className="divide-x divide-gray-400 margin-top">
             <a className="link c-light-blue" href="/">Comments</a>
             <a
               className="link c-light-blue"
@@ -43,7 +43,7 @@ const Book = ({ book, removeBook }) => {
               Current Chapter
             </h5>
             <p className="text-sm">Chapter 17</p>
-            <button className="btn" type="button">Update Progress</button>
+            <button className="btn margin-top" type="button">Update Progress</button>
           </div>
         </div>
       </div>

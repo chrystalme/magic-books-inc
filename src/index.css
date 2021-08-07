@@ -33,6 +33,10 @@ body {
   color: #4386bf;
 }
 
+.margin-top {
+  margin-top: 1rem;
+}
+
 /* stylelint-enable */
 
 /*
