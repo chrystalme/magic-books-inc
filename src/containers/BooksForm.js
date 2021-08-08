@@ -37,18 +37,20 @@ const BooksForm = ({ addBook }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Add book form</h2>
-      <input type="text" name="title" placeholder="Enter Book Title" value={titleInput} onChange={handleChange} />
-      <select name="category" id="category" value={categorySelect} onChange={handleChange}>
-        <option value="">Select a category</option>
-        {CATEGORY.map((category) => (
-          <option key={Math.floor(Math.random() * CATEGORY.length * 10)} value={category}>
-            {category}
-          </option>
-        ))}
-      </select>
-      <button type="submit">Add Book</button>
+    <form className="w-4/5 border-solid border-t border-gray-200" onSubmit={handleSubmit}>
+      <h2 className="uppercase text-sm font-bold text-gray-400 mb-2">Add new book</h2>
+      <div className="flex flex-row justify-between">
+        <input className="w-4/6 px-3 border-solid border border-gray-200 bg-white text-gray-300 text-sm font-light rounded-sm" type="text" name="title" placeholder="Enter Book Title" value={titleInput} onChange={handleChange} />
+        <select className="text-gray-300 bg-white text-sm font-light rounded-sm w-1/6 border-solid border border-gray-200" name="category" id="category" value={categorySelect} onChange={handleChange}>
+          <option value="">Category</option>
+          {CATEGORY.map((category) => (
+            <option key={category} value={category}>
+              {category}
+            </option>
+          ))}
+        </select>
+        <button className="px-8 btn font-serif font-bold" type="submit">Add Book</button>
+      </div>
     </form>
   );
 };

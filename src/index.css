@@ -1,27 +1,131 @@
+/* ./src/index.css */
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @apply bg-gray-100 px-12 pt-12 mx-auto;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+.btn {
+  @apply rounded-sm py-2 bg-blue-600 hover:bg-blue-400 text-gray-200 uppercase;
+  background: #0290ff;
+  font-size: 0.813rem;
+}
+
+.nav-item {
+  @apply text-xs font-light text-gray-500 hover:text-gray-700 uppercase;
+}
+
+.link {
+  @apply px-2 cursor-pointer text-blue-600 hover:text-blue-800 text-sm font-light;
+}
+
+.link:first-child {
+  @apply pl-0;
+}
+
+/* stylelint-enable */
+
+.logo {
+  color: #0290ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+}
+
+.c-light-blue {
+  color: #4386bf;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 0.875rem;
+}
+
+.margin-top {
+  margin-top: 1rem;
+}
+
+.margin-right {
+  margin-right: 7rem;
+}
+
+form {
+  margin: 1.5rem auto;
+  padding: 2rem 0 10rem 0;
+}
+
+.c-shadow {
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+}
+
+#root {
+  padding: 3rem 2rem 6rem 2rem;
+}
+
+/*
+ * react-circular-progressbar styles
+ * All of the styles in this file are configurable!
+ */
+
+.CircularProgressbar {
+  /*
+   * This fixes an issue where the CircularProgressbar svg has
+   * 0 width inside a "display: flex" container, and thus not visible.
+   */
+  width: 100%;
+
+  /*
+   * This fixes a centering issue with CircularProgressbarWithChildren:
+   * https://github.com/kevinsqi/react-circular-progressbar/issues/94
+   */
+  vertical-align: middle;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #3e98c7;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #d6d6d6;
+
+  /* Used when trail is not full diameter, i.e. when props.circleRatio is set */
+  stroke-linecap: round;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #3e98c7;
+  font-size: 20px;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
+.CircularProgressbar .CircularProgressbar-background {
+  fill: #d6d6d6;
+}
+
+/*
+ * Sample background styles. Use these with e.g.:
+ *
+ *   <CircularProgressbar
+ *     className="CircularProgressbar-inverted"
+ *     background
+ *     percentage={50}
+ *   />
+ */
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background {
+  fill: #3e98c7;
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
+  fill: #fff;
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path {
+  stroke: #fff;
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
+  stroke: transparent;
 }

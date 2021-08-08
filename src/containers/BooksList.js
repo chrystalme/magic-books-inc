@@ -14,22 +14,40 @@ const BooksList = ({
 
   return (
     <>
-      <CategoryFilter changeFilter={handleFilterChange} />
-      <table>
-        <thead>
-          <tr>
-            <td>Book ID</td>
-            <td>Title</td>
-            <td>Category</td>
-          </tr>
-        </thead>
-        <tbody>
-          {books.filter((book) => (filter === 'All' ? books : book.category === filter))
-            .map((book) => (
-              <Book key={book.ISBN} book={book} removeBook={handleRemoveBook} />
-            ))}
-        </tbody>
-      </table>
+      <nav className="container mx-auto">
+        <div className="bg-white flex justify-between align-middle items-center lg:px-32 py-4">
+          <div className="content-center">
+            <span className="logo">Bookstore CMS</span>
+
+            <a className="nav-item px-8" href="/">
+              Books
+            </a>
+            <CategoryFilter changeFilter={handleFilterChange} />
+          </div>
+          <div className="border-solid border-2 border-gray-300 rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="fill-current text-blue-600 m-1 h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                strokeWidth="2"
+                fillRule="evenodd"
+                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+      <div className="mt-12">
+        {books
+          .filter((book) => (filter === 'All' ? books : book.category === filter))
+          .map((book) => (
+            <Book key={book.ISBN} book={book} removeBook={handleRemoveBook} />
+          ))}
+      </div>
     </>
   );
 };
@@ -44,13 +62,15 @@ const mapDispatchToProps = (dispatch) => ({
   handleFilterChange: (filter) => dispatch(changeFilter(filter.target.value)),
 });
 
-const ConnectedComponent = connect(mapStateToProps, mapDispatchToProps)(BooksList);
-
+const ConnectedComponent = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(BooksList);
 BooksList.propTypes = {
   books: PropTypes.instanceOf(Array).isRequired,
   removeBook: PropTypes.func.isRequired,
-  filter: PropTypes.string.isRequired,
   handleFilterChange: PropTypes.func.isRequired,
+  filter: PropTypes.string.isRequired,
 };
 
 export default ConnectedComponent;
