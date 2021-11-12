@@ -44,7 +44,7 @@ $npm run test
 
 #### Live Link
 
-[Magic Books Inc](https://magic-books-microverse.herokuapp.com/)
+[Magic Books Inc](https://magic-book-inc.netlify.app/)
 
 ## Authors
 
